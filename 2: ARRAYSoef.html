@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const tShirtBestelling = [{
+            kleur: "rood",
+            category: "vrouw",
+            maat: "M",
+            aankoopjaar: 2003
+        }, {
+            kleur: "geel",
+            category: "vrouw",
+            maat: "M",
+            aankoopjaar: 2007
+        }, {
+            kleur: "geel",
+            category: "man",
+            maat: "M",
+            aankoopjaar: 2013
+        }, {
+            kleur: "wit",
+            category: "vrouw",
+            maat: "S",
+            aankoopjaar: 2004
+        }, {
+            kleur: "rood",
+            category: "man",
+            maat: "S",
+            aankoopjaar: 2006
+        }, {
+            kleur: "geel",
+            category: "vrouw",
+            maat: "M",
+            aankoopjaar: 2003
+        }, {
+            kleur: "rood",
+            category: "man",
+            maat: "M",
+            aankoopjaar: 2019
+        }, {
+            kleur: "wit",
+            category: "vrouw",
+            maat: "S",
+            aankoopjaar: 2012
+        }, {
+            kleur: "geel",
+            category: "man",
+            maat: "S",
+            aankoopjaar: 2019
+        }, {
+            kleur: "wit",
+            category: "man",
+            maat: "M",
+            aankoopjaar: 2015
+        }, {
+            kleur: "geel",
+            category: "vrouw",
+            maat: "S",
+            aankoopjaar: 2017
+        }, {
+            kleur: "rood",
+            category: "man",
+            maat: "S",
+            aankoopjaar: 2016
+        }, ]
+
+        /*
+                const rodeShirts = tShirtBestelling.filter(function (zoeker) {
+                    if (zoeker.kleur === 'rood') {
+                        return true
+                    }
+                });
+                console.log(rodeShirts)
+
+                */
+        /*//ES6magic
+               const geleShirts = tShirtBestelling.filter(zoeker => zoeker.kleur == 'geel');
+               console.log(geleShirts);
+               */
+        const jaarVrouwShirts = tShirtBestelling.filter(zoeker => ((zoeker.aankoopjaar >= 2005 && zoeker.aankoopjaar <
+            2010) && zoeker.category === 'vrouw'));
+        console.log(jaarVrouwShirts);
+    </script>
+
+
+
+
+
+</body>
+
+</html>
